@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    
+}
+
+ .container{
+    height: fit-content;
+    width: 50%;
+    margin: auto;
+    border: 1px solid rgb(185, 182, 182);
+    border-radius: 20px;
+    margin-bottom: 2em;
+}
+
+
+.hidden{
+    display: none !important;
+}
+
+.img{
+    width: 100%;
+   
+}
+
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.top{
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.inputQuest{
+    text-align: center;
+}
+
+.question{
+    width: 100%;
+    height: 4em;
+    margin-top: 2em;
+    font-size: 1em;
+    border: 1px solid white;
+    padding-left: 1rem;
+   
+}
+
+.choicesOption{
+    height: fit-content;
+    width: 100%;
+    margin: auto;
+    border: 1px solid rgb(185, 182, 182);
+    border-radius: 40px;
+    margin-top: 2em;
+    
+}
+
+.choice1,.choice2,.choice3,.choice4{
+    height: 4em;
+    width: 80%;
+    margin-top: 2em;
+    border: 1px solid rgb(185, 182, 182);
+    border-radius: 5px;
+    font-size: 1em;
+    padding-left: 1em;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.choice{
+    border-bottom: 1px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-max(180px,1fr))
+}
+
+form input{
+    margin-top: 2em;
+    width: 20%;
+    height: 3em;
+    margin-left: 1em;
+    text-align: center;
+}
+
+.btn{
+    width: 100%;
+    height: 5em;
+    margin-top: 2em;
+    color: #1565e5;
+    font-size: 1.5em;
+    background-color: white;
+    border: 1px solid rgb(185, 182, 182);
+}
+
+.btn:hover{
+    background-color: #1565e5;
+    color: white;
+}
+
+.Errorbtn{
+   animation: error 3s infinite;
+}
+
+@keyframes error {
+    50% {box-shadow: 10px 20px 30px rgb(199, 105, 105);}
+  }
+
+.Result{
+    height: fit-content;
+    width: 50%;
+    margin: auto;
+    border: 1px solid rgb(185, 182, 182);
+    border-radius: 20px;
+    
+}
+
+.sentMessage{
+    height: 3em;
+    width: 97%;
+    margin: auto;
+    margin-top: 1em;
+    
+}
+
+.control1,.control2{
+    margin-top: 2em;
+}
+
+.control1,.control2{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.counts{
+    font: 1,4em;
+    padding-left: 1em;
+    color: #1565e5;
+}
+
+
+.choicesOption a{
+    font-size: 1.5em;
+    color: #1565e5;
+    text-decoration: none;
+    float: right;
+    margin-right: 1em;
+
+}
+
+
+
+ .poll-card{
+	max-width: 300px;
+	border: 1px solid #555;
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	padding: 1rem 1.5rem;
+}
+.sentMessage{
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+.option,.Thirdoption,.Fourthoption{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0.4rem 0;
+	border: 1px solid #c9c9c9;
+	border-radius: 4px;
+	position: relative;
+}
+.bar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #e9e9e9;
+	z-index: -10;
+	border-radius: 4px;
+}
+.input{
+	width: 100%;
+}
+label{
+	display: block;
+	cursor: pointer;
+	padding: 0.8rem;
+}
+.percent{
+	position: absolute;
+	z-index: -9;
+	right: 7px;
+	top: 12px;
+	font-weight: 700;
+}
+.analytic,
+.tick{
+	display: none;
+}
+
+.timer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.timer span{
+    color: #1565e5;
+}
+
+.select-wrap 
+{
+  border: 1px solid #1565e5;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 0 5px 5px;
+  width:30%;
+  background-color:#ebebeb;
+}
+
+.select-wrap label
+{
+  font-size:10px;
+  text-transform: uppercase;
+  color: #1565e5;
+  padding: 2px 8px 0;
+}
+
+select
+{
+  background-color: #ebebeb;
+  border:0px;
+}
+
+@media screen and (min-width:180px) and (max-width:690px) {
+    .container{
+        width: 90%;
+        height: fit-content;
+    }
+}
+
+ 
