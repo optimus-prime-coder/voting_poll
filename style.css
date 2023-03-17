@@ -5,8 +5,8 @@
 }
 
 body{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     
@@ -14,8 +14,9 @@ body{
 
  .container{
     height: fit-content;
-    width: 50%;
+    width: 70%;
     margin: auto;
+    margin-top: 5%;
     border: 1px solid rgb(185, 182, 182);
     border-radius: 20px;
     margin-bottom: 2em;
@@ -116,7 +117,7 @@ form input{
 
 .Result{
     height: fit-content;
-    width: 50%;
+    width: 40%;
     margin: auto;
     border: 1px solid rgb(185, 182, 182);
     border-radius: 20px;
@@ -158,14 +159,19 @@ form input{
 
 }
 
+/* .centerPoll{
+    display: flex;
+    align-items: center;
+} */
 
 
  .poll-card{
-	max-width: 300px;
+	/* max-width: 50%; */
 	border: 1px solid #555;
 	border-radius: 4px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	padding: 1rem 1.5rem;
+    margin-top: 5%;
 }
 .sentMessage{
 	font-weight: 700;
@@ -250,3 +256,16 @@ select
 }
 
  
+@media screen and (min-width:180px) and (max-width:430px) {
+    .Result{
+        width: 90%;
+        height: 40%;
+    }
+}
+
+@media screen and (min-width:431px) and (max-width:650px) {
+    .Result{
+        width: 90%;
+        height: 40%;
+    }
+}
